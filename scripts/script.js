@@ -38,6 +38,14 @@ function displayCourses(filter = 'all') {
         });
 }
 
+function calculateTotalCredits() {
+    const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+    document.getElementById('totalCredits').textContent = `Total Credits: ${totalCredits}`;
+}
+
+calculateTotalCredits();
+
+
 // Filter buttons
 document.getElementById('all').addEventListener('click', () => displayCourses('all'));
 document.getElementById('cse').addEventListener('click', () => displayCourses('CSE'));
@@ -54,3 +62,4 @@ hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
+
