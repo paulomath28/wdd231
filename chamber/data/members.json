@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Vibrant Ventures",
+        "address": "123 Main St",
+        "phone": "800-555-1234",
+        "website": "https://www.vibrantventures.com",
+        "image": "business1.jpg",
+        "membership_level": 1
+    },
+    {
+        "name": "Peak Horizon",
+        "address": "456 Market St",
+        "phone": "800-555-5678",
+        "website": "https://www.peakhorizon.com",
+        "image": "business2.jpg",
+        "membership_level": 2
+    },
+    {
+        "name": "Riachuelo",
+        "address": "789 Broadway",
+        "phone": "800-555-9012",
+        "website": "https://www.riachuelo.com",
+        "image": "business3.jpg",
+        "membership_level": 3
+    },
+    {
+        "name": "Octarte",
+        "address": "456 Market St",
+        "phone": "800-555-5678",
+        "website": "https://www.octarte.com",
+        "image": "business4.jpg",
+        "membership_level": 4
+    },
+    {
+        "name": "Simple",
+        "address": "987 Market St",
+        "phone": "800-555-3042",
+        "website": "https://www.simple.com",
+        "image": "business5.jpg",
+        "membership_level": 5
+    },
+    {
+        "name": "YOUCOM",
+        "address": "345 Main St",
+        "phone": "800-555-4688",
+        "website": "https://www.youcom.com",
+        "image": "business6.jpg",
+        "membership_level": 6
+    },
+    {
+        "name": "Eletrojan",
+        "address": "455 Broadway",
+        "phone": "800-555-5979",
+        "website": "https://www.eletrojan.com",
+        "image": "business7.jpg",
+        "membership_level": 7
+    }
+    
+]
