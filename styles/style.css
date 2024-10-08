@@ -79,6 +79,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+
 /* Hamburger Menu Active (When Clicked) */
 .hamburger-menu.active span:nth-child(1) {
     transform: rotate(45deg) translateY(10px);
@@ -151,3 +152,46 @@ footer {
     }
 }
 
+#business-directory {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Estilo para Exibição em Grade */
+.grid-view {
+    flex-direction: row;
+}
+
+.grid-view .member-card {
+    width: calc(33.333% - 30px); /* Três colunas */
+}
+
+/* Estilo para Exibição em Lista */
+.list-view {
+    flex-direction: column;
+}
+
+.list-view .member-card {
+    width: 100%; /* Ocupa a largura total */
+}
+
+/* Adiciona uma leve sombra ao passar o mouse */
+.member-card:hover {
+    transform: scale(1.05);
+}
