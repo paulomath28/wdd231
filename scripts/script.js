@@ -1,11 +1,11 @@
 // Array de Cursos
 const courses = [
-    { code: 'CSE 110', title: 'Introduction to Programming', credits: 3, completed: true },
-    { code: 'CSE 210', title: 'Advanced Programming', credits: 4, completed: false },
-    { code: 'WDD 130', title: 'Web Development Basics', credits: 3, completed: true },
-    { code: 'WDD 131', title: 'Advanced Web Development', credits: 3, completed: false },
-    { code: 'WDD 231', title: 'JavaScript Development', credits: 3, completed: false },
-    { code: 'CSE 111', title: 'Object-Oriented Programming', credits: 4, completed: true }
+    { code: 'CSE 110', title: 'Introduction to Programming', credits: 2, completed: true },
+    { code: 'CSE 210', title: 'Advanced Programming', credits: 2, completed: false },
+    { code: 'WDD 130', title: 'Web Development Basics', credits: 2, completed: true },
+    { code: 'WDD 131', title: 'Advanced Web Development', credits: 2, completed: false },
+    { code: 'WDD 231', title: 'JavaScript Development', credits: 2, completed: false },
+    { code: 'CSE 111', title: 'Object-Oriented Programming', credits: 2, completed: true }
 ];
 
 // Fills in the current year in the footer
