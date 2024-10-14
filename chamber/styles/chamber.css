@@ -40,7 +40,7 @@ nav {
 .hero {
     position: relative;
     text-align: center;
-    color: white; /* Change this based on your design */
+    color: white; 
 }
 
 .hero-content {
@@ -319,8 +319,6 @@ hr {
 }
 
 
-/* ---------- SMALL VIEW NAV --------- */
-
 /* ----------- HAM MENU ---------- */
 
 @media (max-width: 900px ) {
@@ -561,7 +559,6 @@ hr {
 }
 
 
-/* Estilos básicos para o formulário */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -571,7 +568,7 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid layout para o formulário */
+
 form fieldset {
     display: grid;
     grid-template-columns: 1fr;
@@ -580,7 +577,7 @@ form fieldset {
     padding: 0;
 }
 
-/* Alinhamento de labels e inputs */
+
 form label {
     display: block;
     font-weight: bold;
@@ -600,7 +597,7 @@ form select {
     box-sizing: border-box;
 }
 
-/* Botão de submissão */
+
 form input[type="submit"] {
     width: 100%;
     background-color: #4CAF50;
@@ -616,7 +613,7 @@ form input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-/* Organização dos cards de membership */
+
 .membership-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -650,7 +647,7 @@ form input[type="submit"]:hover {
     text-decoration: underline;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .membership-cards {
         grid-template-columns: 1fr;
