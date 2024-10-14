@@ -1,113 +1,193 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Paulo Nascimento's BYU-Idaho WDD 231 course homepage">
-    <meta name="author" content="Paulo Nascimento">
-    <title>Copacabana Rio of Commerce</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
-    <link rel="icon" href="favicon.ico">
+
+    <title>Join | Copacabana Rio Chamber of Commerce</title>
+    <meta name="description" content="WDD 231 | Chamber of commerce - Paulo Andre Nascimento">
+    <meta name="author" content="Paulo Andre Nascimento">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/large-chamber.css">
+    <script src="scripts/script.js" defer=""></script>
+    <script src="scripts/weather.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.ico">
+
+    <meta property="og:title" content="WDD 231 | Chamber of commerce - Paulo Andre Nascimento">
+    <meta property="og:url" content="https://paulomath28.github.io/wdd231/chamber/">
+    <meta property="og:description" content="Copacabana Rio Chamber of Commerce - WDD231">
+    <meta property="og:image" content="https://paulomath28.github.io/wdd231/chamber/images/hero.jpeg" >
+    <meta property="og:type" content="website">
 </head>
 <body>
-    <header class="grid-header">
-        <div class="logo">
-            <img src="images/logo1.png" alt="Copacabana Rio Logo" width="12%">
-        </div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-    
-    
+    <header>
+        <div class="header">
+            <img src="images/logo.png" alt="logo">
 
-    <main class="grid-main">
-        <section class="hero">
-            <h1>Welcome to Copacabana Rio of Commerce</h1>
-            <img src="images/banner.jpeg" width="1028" height="230" alt="Copacabana Beach and its boardwalk">
-            <button onclick="window.location.href='join.html'">Join Us</button>
-        </section>
-
-        <div class="grid-content">
-            <div class="events">
-                <h2>Upcoming Events</h2>
-                <div class="event-list">
-                
-                </div>
-            </div>
-            <div class="weather">
-                <h2>Current Weather</h2>
-                <p>75°F, Partly Cloudy</p>
-            </div>
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-                <p>Today: 90°F</p>
-                <p>Wednesday: 89°F</p>
-                <p>Thursday: 68°F</p>
-            </div>
-        </div>
-        
-        <section class="business grid-business">
-            <h2>Featured Businesses</h2>
+            <div class="title">
             
-            <button id="toggle-view">Toggle View</button>
-            <div class="business-cards">
-                <div class="business-card">
-                    <h3>Copacabana Rio</h3>
-                    <p>With us you sell more</p>
-                    <p>Email: copacabanario@business.com</p>
-                    <p>Phone: +55-21-2345-1234</p>
-                    <p>Website: <a href="http://www.copacabanario.com" target="_blank">www.copacabanario.com</a></p>
-                </div>
-                
+                <h1>Copacabana Rio</h1>
+                <h2>Chamber of Commerce</h2>
             </div>
-        </section>
 
-        <section class="spotlights grid-business">
-            <h2>Business Spotlights</h2>
-            <div class="spotlights"></div>
-        </section>
-        <section class="spotlight">
-            <h2>Member Spotlight</h2>
-            <div class="spotlight-members">
-                
-            </div>
-        </section>   
+        </div>
+    
+        <nav>
+            <div><button id="menu" aria-label="Open menu"></button></div>
+
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+
+                <li><a href="discover.html" title="Discover" >Discover</a></li>
+
+                <li><a href="directory.html" title="Directory" >Directory</a></li>
+
+                <li><a href="join.html" title="Join">Join</a></li>
+
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <main>
+        <h1>Join the Chamber</h1>
+
+        <form action="thankyou.html" method="GET">
+            <!-- Nome do solicitante -->
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
         
+            <!-- Sobrenome do solicitante -->
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+        
+            <!-- Cargo dentro da organização -->
+            <label for="organization-title">Organizational Title</label>
+            <input type="text" id="organization-title" name="organization-title" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="CEO, Manager, etc.">
+        
+            <!-- Endereço de e-mail -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+        
+            <!-- Número de telefone -->
+            <label for="phone">Mobile Phone</label>
+            <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+        
+            <!-- Nome da empresa/organização -->
+            <label for="organization">Business/Organization Name</label>
+            <input type="text" id="organization" name="organization" title="Enter your organization name" autocomplete="organization" required>
+        
+            <!-- Nível de associação -->
+            <label for="membership-level">Membership Level</label>
+            <select id="membership-level" name="membership-level" title="Select your membership level" required>
+                <option value="">Select a level</option>
+                <option value="np">NP Membership (Non-Profit)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+        
+            <!-- Descrição da empresa/organização -->
+            <label for="description">Business/Organization Description</label>
+            <textarea id="description" name="description" title="Enter your business description" rows="4" required></textarea>
+        
+            <!-- Timestamp oculto -->
+            <input type="hidden" id="timestamp" name="timestamp">
+        
+            <!-- Botão de submissão -->
+            <input type="submit" value="Submit Application">
+        </form>
+        
+        <script>
+            const timestampField = document.getElementById('timestamp');
+            const now = new Date();
+            timestampField.value = now.toISOString();
+        </script>
+
+        <wbr><wbr>
+        <!-- Membership Level Cards -->
+        <!-- Membership Level Cards -->
+<div class="membership-cards">
+    <div class="membership-card">
+        <h3>Non-Profit Membership</h3>
+        <p>No fee for non-profit organizations.</p>
+        <a href="#npModal">More Information</a>
+    </div>
+    <div class="membership-card">
+        <h3>Bronze Membership</h3>
+        <p>Basic membership for small businesses.</p>
+        <a href="#bronzeModal">More Information</a>
+    </div>
+    <div class="membership-card">
+        <h3>Silver Membership</h3>
+        <p>Enhanced benefits for growing businesses.</p>
+        <a href="#silverModal">More Information</a>
+    </div>
+    <div class="membership-card">
+        <h3>Gold Membership</h3>
+        <p>Full benefits for large enterprises.</p>
+        <a href="#goldModal">More Information</a>
+    </div>
+</div>
+
+
+        <!-- Modals -->
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <h2>Bronze Membership Benefits</h2>
+                <p>Event discounts, basic advertising, etc.</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <h2>Silver Membership Benefits</h2>
+                <p>Event discounts, priority advertising, and more.</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <h2>Gold Membership Benefits</h2>
+                <p>All benefits including spotlight features, top advertising, etc.</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
     </main>
- 
-    <footer class="grid-footer">
-        <div class="contact-info">
-            <p><strong>Copacabana Rio of Commerce</strong></p>
-            <p>350 Ave, Copacabana, RJ 10118, BRA;</p>
-            <p>Copacabana, Rio de Janeiro</p>
-            <p>copacabanario@business.com</p>
-            <p>21-2345-1234</p>
-        </div>
-
-        <div class="social-media">
-            <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
-            <a href="#"><img src="images/x.webp" alt="Twitter"></a>
-            <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
-        </div>
-
-        <div class="project-info">
-            <p>WDD231 Class Project</p>
-            <p>Paulo André Nascimento</p>
-            <p>&copy; 2024 Copacabana Rio of Commerce</p>
-            <p id="last-modification">Last Modification: </p>
-        </div>
+    <wbr><wbr>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+              <p><strong>Copacana Rio  Chamber of Commerce</strong><br>
+                  350 Ave, Copacabana, RJ 10118<br>
+                Rio de Janeiro, Brazil<br>
+                <a href="mailto:copacabanario@business.com">info@copriochamberofcommerce.org</a><br>
+                +55 (21)2345-1234
+              </p>
+            </div>
+            <div class="footer-center">
+              <a href="https://www.youtube.com/"><img src="images/youtube.webp" alt="YouTube"></a>
+              <a href="https://x.com/?lang=en"><img src="images/x.webp" alt="Twitter"></a>
+              <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-right">
+              <p>WDD231 Chamber Project<br>
+                Paulo André Nascimento<br>
+                &copy;<span id="currentyear">2024</span> Copacabana Rio Chamber of Commerce
+              </p>    
+              <p id="lastModified"></p>
+            </div>
+          </div>
     </footer>
+
+    <script src="scripts/form.js"></script>
 </body>
 </html>
