@@ -1,0 +1,320 @@
+@media (min-width: 900px) {
+
+
+    body {
+
+        justify-content : center;
+        align-items: center;
+
+    }
+
+
+    .navigation {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        background-color: #e68a0a;
+    }
+    
+    .navigation li {
+        flex: 1 1 auto;
+    }
+    
+    .navigation a {
+        display: block;
+        color: #f8f2f2;
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .navigation a:hover {
+    
+        text-decoration: underline;
+    }
+    
+    .navigation a:visited {
+        color: rgb(7, 7, 7);
+    }
+    
+    #menu {
+        display: none;
+
+    }
+
+
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2.3rem;
+      }
+
+    .footer-left p, .footer-right p {
+        margin: 0;
+        margin-left: 20px;
+      }
+
+      .w-icon {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .w-icon div{
+        width: 180px;
+    }
+    
+    .w-icon img {
+        width: auto;
+        height: 100px;
+        padding: 0;
+        margin-top: 20px;
+        padding-right: 30px;
+        padding-left: 20px;
+
+    
+    }
+
+    .home h2 {
+        padding: 5px 0 5px 15px;
+    }
+
+    .w-icon div{
+
+        margin-bottom: 10px;
+    }
+
+
+}
+
+.spotlight {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/*-------------------------------------------*/
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+
+/* Centralizar o título e o botão Toggle View */
+.grid-business {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão Toggle View */
+#toggle-view {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e68a0a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-view:hover {
+    background-color: #d0740a;
+}
+
+/* Layout Responsivo para os Cards */
+.business-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos dos Cards */
+/* Estilos dos Cards */
+.business-card {
+    background-color: #f9f9f9;
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+/* Estilos para o nome da empresa */
+.business-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    text-align: center;
+}
+
+/* Estilos para os detalhes da empresa (endereço, telefone, etc.) */
+.business-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Estilo para o link do website */
+.business-card a {
+    font-size: 0.9rem;
+    color: #e68a0a;
+    text-decoration: none;
+}
+
+.business-card a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a imagem */
+.business-card img {
+    max-width: 100%;
+    height: auto; /* Garante que a imagem não distorça */
+    border-radius: 8px;
+    margin-top: 10px; /* Espaçamento acima da imagem */
+}
+
+/* Ajustes para os cards em visualizações de tamanhos maiores */
+@media (min-width: 600px) {
+    .business-card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .business-card {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .business-card {
+        width: 20%;
+    }
+}
+
+
+
+
+
+
+.business-cards.grid-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.business-cards.list-view {
+    display: flex;
+}
+
+.business-card {
+    width: 14%; 
+}
+
+.list-view .business-card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.spotlights {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.spotlight-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 200px;
+    max-width: 300px;
+    
+}
+
+.spotlight {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Centralizar a seção de Member Spotlight e alinhar os cards lado a lado */
+.spotlight-members {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
+    padding: 20px;
+}
+
+/* Ajustar o tamanho do card */
+.spotlight-member {
+    width: 300px; /* Define uma largura fixa para os cards */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o texto no card */
+}
+
+/* Imagem dentro do card */
+.spotlight-member img {
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Altura da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Imagem circular */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+
+/* Garantir que o link esteja em destaque */
+.spotlight-member a {
+    color: #007BFF; /* Cor de destaque para o link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.spotlight-member a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+.grid-business {
+    text-align: center; /* Centraliza o conteúdo textualmente */
+    margin-bottom: 20px; /* Espaço abaixo da seção */
+}
+
+#toggle-view {
+    margin-top: 10px; /* Espaço entre o título e o botão */
+    padding: 10px 20px; /* Ajusta o padding do botão para torná-lo mais espaçoso */
+    background-color: #e68a0a; /* Cor de fundo do botão (ajuste conforme o design desejado) */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Borda arredondada para um visual mais suave */
+    cursor: pointer; /* Exibe o cursor de "mão" ao passar o mouse */
+}
+
+#toggle-view:hover {
+    background-color: #d0740a; /* Cor de fundo ao passar o mouse sobre o botão */
+}
+
+
+
+
+
+
+
+
