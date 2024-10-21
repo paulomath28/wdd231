@@ -23,7 +23,6 @@ function toggleMenu() {
     nav.classList.toggle('active');
 }
 
-
 const toggleViewButton = document.querySelector('#toggle-view'); 
 const businessCards = document.querySelector('.business-cards');
 
@@ -42,8 +41,8 @@ async function fetchMembers() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const members = await response.json();
-        displayMembers(members);  
-        displaySpotlightMembers(members);  
+        displayMembers(members);  // Exibe os membros
+        displaySpotlightMembers(members);  // Exibe os membros em destaque
     } catch (error) {
         console.error("Error loading members:", error);
     }
@@ -84,12 +83,11 @@ function displayMembers(members) {
 function getRandomSpotlightMembers(members) {
     const eligibleMembers = members.filter(member => member.membership_level === 2 || member.membership_level === 3);
     const shuffledMembers = eligibleMembers.sort(() => 0.5 - Math.random());
-    return shuffledMembers.slice(0, Math.floor(Math.random() * 2) + 2); 
+    return shuffledMembers.slice(0, Math.floor(Math.random() * 2) + 2); // Seleciona 2 ou 3 membros aleatoriamente
 }
 
-
 function displaySpotlightMembers(members) {
-    const spotlightContainer = document.querySelector('.spotlight-members'); 
+    const spotlightContainer = document.querySelector('.spotlight-members'); // Selecione o contêiner correto
     if (!spotlightContainer) return; 
     spotlightContainer.innerHTML = ''; 
 
@@ -113,3 +111,4 @@ function displaySpotlightMembers(members) {
 window.addEventListener('load', () => {
     fetchMembers(); 
 });
+
