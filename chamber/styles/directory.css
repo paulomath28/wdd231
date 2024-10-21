@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: #fff;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.menu {
+    margin: 1rem auto;
+    
+    padding: 0.5rem;
+    background-color: rgb(248, 251, 250);
+    display: flex; /* Usar flexbox */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+}
+
+.menu button {
+    padding: 2rem;
+    font-weight: 900;
+    margin: 0 10px; /* Espaçamento entre os botões */
+}
+
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 1.5rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 55px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+.description {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the description */
+    padding: 1rem; /* Inner spacing */
+    background-color: #f0f8ff; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.description h2 {
+    font-size: 2rem; /* Title size */
+    color: navy; /* Title text color */
+}
+
+.description p {
+    font-size: 1.5rem; /* Text size */
+    color: #333; /* Text color */
+}
+

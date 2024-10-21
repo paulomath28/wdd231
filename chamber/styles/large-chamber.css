@@ -103,12 +103,13 @@ h2 {
 }
 
 
+/* Centralizar o título e o botão Toggle View */
 .grid-business {
     text-align: center;
     margin-bottom: 20px;
 }
 
-
+/* Estilo do botão Toggle View */
 #toggle-view {
     margin-top: 10px;
     padding: 10px 20px;
@@ -123,7 +124,7 @@ h2 {
     background-color: #d0740a;
 }
 
-
+/* Layout Responsivo para os Cards */
 .business-cards {
     display: flex;
     flex-wrap: wrap;
@@ -131,10 +132,11 @@ h2 {
     gap: 20px;
 }
 
-
+/* Estilos dos Cards */
+/* Estilos dos Cards */
 .business-card {
     background-color: #f9f9f9;
-    padding: 20px; 
+    padding: 20px; /* Adiciona espaçamento interno */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -142,20 +144,20 @@ h2 {
     max-width: 300px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    gap: 10px; 
+    align-items: center; /* Centraliza o conteúdo */
+    gap: 10px; /* Espaçamento entre os elementos */
 }
 
-
+/* Estilos para o nome da empresa */
 .business-card h3 {
     font-size: 1.2rem;
     font-weight: 700;
     color: #333;
-    margin-bottom: 10px; 
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
     text-align: center;
 }
 
-
+/* Estilos para os detalhes da empresa (endereço, telefone, etc.) */
 .business-card p {
     font-size: 0.9rem;
     color: #666;
@@ -163,7 +165,7 @@ h2 {
     text-align: center;
 }
 
-
+/* Estilo para o link do website */
 .business-card a {
     font-size: 0.9rem;
     color: #e68a0a;
@@ -174,15 +176,15 @@ h2 {
     text-decoration: underline;
 }
 
-
+/* Estilos para a imagem */
 .business-card img {
     max-width: 100%;
-    height: auto; 
+    height: auto; /* Garante que a imagem não distorça */
     border-radius: 8px;
-    margin-top: 10px; 
+    margin-top: 10px; /* Espaçamento acima da imagem */
 }
 
-
+/* Ajustes para os cards em visualizações de tamanhos maiores */
 @media (min-width: 600px) {
     .business-card {
         width: 45%;
@@ -200,6 +202,10 @@ h2 {
         width: 20%;
     }
 }
+
+
+
+
 
 
 .business-cards.grid-view {
@@ -246,62 +252,63 @@ h2 {
     margin-top: 40px;
 }
 
-
+/* Centralizar a seção de Member Spotlight e alinhar os cards lado a lado */
 .spotlight-members {
     display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    flex-wrap: wrap; 
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha se necessário */
     padding: 20px;
 }
 
-
+/* Ajustar o tamanho do card */
 .spotlight-member {
-    width: 300px; 
-    background-color: #f9f9f9; 
+    width: 300px; /* Define uma largura fixa para os cards */
+    background-color: #f9f9f9; /* Cor de fundo suave */
     padding: 20px;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centraliza o texto no card */
 }
 
-
+/* Imagem dentro do card */
 .spotlight-member img {
-    width: 100px; 
-    height: 100px; 
-    object-fit: cover; 
-    border-radius: 50%; 
-    margin-bottom: 10px; 
+    width: 100px; /* Tamanho da imagem */
+    height: 100px; /* Altura da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Imagem circular */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
 }
 
 
+/* Garantir que o link esteja em destaque */
 .spotlight-member a {
-    color: #007BFF; 
-    text-decoration: none; 
+    color: #007BFF; /* Cor de destaque para o link */
+    text-decoration: none; /* Remove o sublinhado */
 }
 
 .spotlight-member a:hover {
-    text-decoration: underline; 
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 
 .grid-business {
-    text-align: center; 
-    margin-bottom: 20px; 
+    text-align: center; /* Centraliza o conteúdo textualmente */
+    margin-bottom: 20px; /* Espaço abaixo da seção */
 }
 
 #toggle-view {
-    margin-top: 10px; 
-    padding: 10px 20px; 
-    background-color: #e68a0a; 
-    color: #fff; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    margin-top: 10px; /* Espaço entre o título e o botão */
+    padding: 10px 20px; /* Ajusta o padding do botão para torná-lo mais espaçoso */
+    background-color: #e68a0a; /* Cor de fundo do botão (ajuste conforme o design desejado) */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Borda arredondada para um visual mais suave */
+    cursor: pointer; /* Exibe o cursor de "mão" ao passar o mouse */
 }
 
 #toggle-view:hover {
-    background-color: #d0740a; 
+    background-color: #d0740a; /* Cor de fundo ao passar o mouse sobre o botão */
 }
 
 
