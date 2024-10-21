@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WDD 231 | Chamber of commerce - Paulo Andre Nascimento</title>
+    <meta name="description" content="WDD 231 | Chamber of commerce - Paulo Andre Nascimento">
+    <meta name="author" content="Paulo Andre Nascimento">
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/large-chamber.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/script.js" defer=""></script>
+    <script src="scripts/directory.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.ico">
+
+    <meta property="og:title" content="WDD 231 | Chamber of commerce - Paulo Andre Nascimento">
+    <meta property="og:url" content="https://paulomath28.github.io/wdd231/chamber/">
+    <meta property="og:description" content="Copacabana Rio Chamber of Commerce - WDD231">
+    <meta property="og:image" content="https://paulomath28.github.io/wdd231/chamber/images/hero.jpeg" >
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="images/logo.png" alt="logo">
+
+            <div class="title">
+            
+                <h1>Copacabana Rio</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+
+        </div>
+    
+        <nav>
+            <div><button id="menu" aria-label="Open menu"></button></div>
+
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+
+                <li><a href="discover.html" title="Discover" >Discover</a></li>
+
+                <li><a href="directory.html" title="Directory" >Directory</a></li>
+
+                <li><a href="join.html" title="Join">Join</a></li>
+
+            </ul>
+            
+        </nav>
+
+    </header>
+
+    <!-- Description Section -->
+    <div class="description">
+        <h2>Business Directory</h2>
+        <p>Welcome to the Copacabana Rio Chamber of Commerce directory! Here you will find a list of local businesses, complete with contact information and links for more details. Explore the businesses in your area!</p>
+    </div>
+    
+	
+	<article class="grid">
+		<section>
+			<img src="images/business1.jpg" alt="Vibrant Ventures" />
+			<h3>Vibrant Ventures</h3>
+			<p>123 Main St</p>
+            <p>800-555-1234</p>
+			<a href="https://www.vibrant.com" target="_blank">Details</a>
+		</section>
+
+		<section>
+			<img src="images/business2.jpg" alt="Peak Horizon" />
+			<h3>Peak Horizon</h3>
+			<p>456 Market St</p>
+            <p>800-555-5678</p>
+			<a href="https://www.peakhorizon.com" target="_blank">Details
+			</a>
+		</section>
+
+		<section>
+			<img src="images/business3.jpg" alt="Riachuelo" />
+			<h3>Riachuelo</h3>
+			<p>789 Broadway</p>
+            <p>800-555-9012</p>
+			<a href="https://www.riachuelo.com" target="_blank">Details </a>
+		</section>
+
+		<section>
+			<img src="images/business4.jpg" alt="Octarte" />
+			<h3>Octarte</h3>
+			<p>459 Market St</p>
+            <p>800-555-3648</p>
+			<a href="https://www.octarte.com" target="_blank">Details</a>
+		</section>
+
+		<section>
+			<img src="images/business5.jpg" alt="Simple" />
+			<h3>Simple</h3>
+			<p>987 Market St</p>
+            <p>800-555-3042</p>
+			<a href="https://www.simple.com" target="_blank">Details</a>
+		</section>
+
+		<section>
+			<img src="images/business6.jpg" alt="YOUCOM" />
+			<h3>YOUCOM</h3>
+			<p>345 Main St</p>
+            <p>800-555-4688</p>
+			<a href="https://www.youcom.com" target="_blank">Details</a>
+		</section>
+
+		<section>
+			<img src="images/business7.jpg" alt="Eletrojan" />
+			<h3>Eletrojan</h3>
+			<p>455 Broadway</p>
+            <p>800-555-5979</p>
+			<a href="https://www.eletrojan.com" target="_blank">Details</a>
+		</section>
+
+		
+	</article>
+
+    <div class="menu">
+		<button id="grid">⏹️</button>
+		<button id="list">📄</button>
+	</div>
+</main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <p><strong>Copacana Rio  Chamber of Commerce</strong><br>
+                350 Ave, Copacabana, RJ 10118<br>
+              Rio de Janeiro, Brazil<br>
+              <a href="mailto:copacabanario@business.com">info@copriochamberofcommerce.org</a><br>
+              +55 (21)2345-1234
+            </p>
+          </div>
+          <div class="footer-center">
+            <a href="https://www.youtube.com/"><img src="images/youtube.webp" alt="YouTube"></a>
+            <a href="https://x.com/?lang=en"><img src="images/x.webp" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+          </div>
+          <div class="footer-right">
+            <p>WDD231 Chamber Project<br>
+              Paulo André Nascimento<br>
+              &copy;<span id="currentyear">2024</span> Copacabana Rio Chamber of Commerce
+            </p>    
+            <p id="lastModified"></p>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
