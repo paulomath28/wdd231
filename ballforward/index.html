@@ -157,6 +157,37 @@
     width: 120%; /* Define a largura das imagens na seção Features */
     height: auto;
 }
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o grid para ser responsivo */
+    gap: 10px; /* Espaçamento entre as imagens */
+}
+.gallery img {
+    width: 100%;
+    height: 150px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+    display: block;
+}
+.main-image {
+    grid-column: span 3; /* Faz a imagem principal ocupar 3 colunas */
+    height: 300px; /* Define uma altura maior para a imagem principal */
+}
+.features {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha em telas menores */
+    justify-content: space-between;
+}
+.features img {
+    flex: 1 1 30%; /* Ajusta a largura das imagens na seção Features */
+    height: auto;
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
+}
+
+        
+
         
     </style>
     
