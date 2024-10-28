@@ -29,7 +29,7 @@
             gap: 20px;
 
             z-index: 1000; 
-            position: relative; 
+    position: relative; 
         }
 
         .nav-links a {
@@ -148,47 +148,6 @@
             border-radius: 8px;
             margin: 10px 0;
         }
-
-        .features {
-    display: flex;
-    justify-content: space-between;
-}
-.features img {
-    width: 120%; /* Define a largura das imagens na seção Features */
-    height: auto;
-}
-
-
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o grid para ser responsivo */
-    gap: 10px; /* Espaçamento entre as imagens */
-}
-.gallery img {
-    width: 100%;
-    height: 150px; /* Define uma altura fixa para todas as imagens */
-    object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
-    display: block;
-}
-.main-image {
-    grid-column: span 3; /* Faz a imagem principal ocupar 3 colunas */
-    height: 300px; /* Define uma altura maior para a imagem principal */
-}
-.features {
-    display: flex;
-    flex-wrap: wrap; /* Permite que as imagens quebrem linha em telas menores */
-    justify-content: space-between;
-}
-.features img {
-    flex: 1 1 30%; /* Ajusta a largura das imagens na seção Features */
-    height: auto;
-    max-width: 100%; /* Garante que as imagens não ultrapassem a largura do contêiner */
-}
-
-        
-
-        
     </style>
     
 </head>
@@ -211,7 +170,6 @@
                 <span></span>
                 <span></span>
             </div>
-
         </nav>
     </header>
     
@@ -221,13 +179,14 @@
         <section class="hero">
             <h1>Ball Forward</h1>
             <img src="images/hero2.jpg" alt="Sports Image">
-            <button class="cta" onclick="location.href='gallery.html'">Gallery</button>
+            <a href="gallery.html">
+                <button class="cta">Gallery</button>
+            </a>
         
         </section>
 
         <!-- Features Section -->
         <section class="features">
-            <h2></h2>
             <div class="feature">
                 <img src="images/futvolei1.jpg" alt="Footvolley image" class="responsive-img" loading="lazy">
                 <p>Footvolley</p>
@@ -242,9 +201,6 @@
             </div>
         </section>
 
-    
-           
-
         <!-- Content Section with Callout -->
         <section class="content-callout">
             <div class="main-content">
@@ -255,7 +211,7 @@
                 <p>"Ball Forward provides opportunities for youth and adults to practice sports such as soccer, beach volleyball,
                 and footvolley, promoting physical and mental well-being. Our mission is to strengthen communities, 
                 build connections, and open doors to professional sports. Join us and be part of this transformation."</p>
-                <button class="contact-us" onclick="location.href='contact.html'">Contact Us</button>
+                <a href="contact.html"><button class="contact-us">Contact Us</button></a>
             </div>
         </section>
     </main>
