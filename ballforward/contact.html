@@ -6,8 +6,9 @@
     <meta name="description" content="Ball Forward Project helps young people and adults practice sports like soccer, beach volleyball, and footvolley.">
     <meta name="author" content="Paulo Nascimento">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/script.js" defer></script>
-    <title>Ball Forward - Home</title>
+    <title>Ball Forward - Contact Us</title>
     <link rel="icon" href="images/favicon.ico">
 
     <style>
@@ -29,7 +30,7 @@
             gap: 20px;
 
             z-index: 1000; 
-    position: relative; 
+            position: relative; 
         }
 
         .nav-links a {
@@ -44,7 +45,7 @@
             cursor: pointer;
             flex-direction: column;
             gap: 4px;
-            margin-left: auto; /* Aligns the hamburger to the right */
+            margin-left: auto; 
         }
 
         .menu-toggle span {
@@ -149,7 +150,6 @@
             margin: 10px 0;
         }
     </style>
-    
 </head>
 <body>
 
@@ -173,58 +173,59 @@
         </nav>
     </header>
     
-    
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Ball Forward</h1>
-            <img src="images/hero2.jpg" alt="Sports Image">
-            <a href="gallery.html">
-                <button class="cta">Gallery</button>
-            </a>
-        
-        </section>
+        <main>
+            <h1>Contact Us</h1>
+    
+            <form action="thankyou.html" method="GET">
+                
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+            
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+            
+                
+                <label for="organization-title">Organizational Title</label>
+                <input type="text" id="organization-title" name="organization-title" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="CEO, Manager, etc.">
+            
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+            
+                
+                <label for="phone">Mobile Phone</label>
+                <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="feature">
-                <img src="images/futvolei1.jpg" alt="Footvolley image" class="responsive-img" loading="lazy">>
-                <p>Footvolley</p>
-            </div>
-            <div class="feature">
-                <img src="images/fut1.jpeg" alt="Futball image" class="responsive-img" loading="lazy">>
-                <p>Futball</p>
-            </div>
-            <div class="feature">
-                <img src="images/volei1.jpg" alt="Sand volleyball image" class="responsive-img" loading="lazy">>
-                <p>Sand volleyball</p>
-            </div>
-        </section>
-
-        <!-- Content Section with Callout -->
-        <section class="content-callout">
-            <div class="main-content">
-                <img src="images/futebol.jpeg" alt="Main Content Image" class="responsive-img">
-            </div>
-            <div class="callout-box">
-                <h2>Ball Forward: Transforming Lives Through Sports</h2>
-                <p>"Ball Forward provides opportunities for youth and adults to practice sports such as soccer, beach volleyball,
-                and footvolley, promoting physical and mental well-being. Our mission is to strengthen communities, 
-                build connections, and open doors to professional sports. Join us and be part of this transformation."</p>
-                <a href="contact.html"><button class="contact-us">Contact Us</button></a>
-            </div>
-        </section>
+            
+                <input type="hidden" id="timestamp" name="timestamp">
+            
+                
+                <input type="submit" value="Submit Application">
+            </form>
+            
+            <script>
+                const timestampField = document.getElementById('timestamp');
+                const now = new Date();
+                timestampField.value = now.toISOString();
+            </script>
+    
     </main>
+    
+
+
     
     <!-- Footer -->
     <footer>
         <p>© 2024 ⚽ Ball Forward ⚽ Paulo André Nascimento ⚽ WDD 231</p>
         <div class="social-icons">
-            <a href="#"><img src="images/logo-instagram.webp" alt="Instagram Social Icon"></a>
-            <a href="#"><img src="images/x-logo.png" alt="X Social Icon"></a>
-            <a href="#"><img src="images/youtube.webp" alt="Youtube Social Icon"></a>
+            <a href="#"><img src="images/logo-instagram.webp" alt="Social Icon"></a>
+            <a href="#"><img src="images/x-logo.png" alt="Social Icon"></a>
+            <a href="#"><img src="images/youtube.webp" alt="Social Icon"></a>
         </div>
     </footer>
-    
+    <script src="scripts/form.js"></script>
+
 </body>
 </html>

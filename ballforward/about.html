@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ball Forward Project helps young people and adults practice sports like soccer, beach volleyball, and footvolley.">
+    <meta name="description" content="Learn more about Ball Forward, our history, and our activities.">
     <meta name="author" content="Paulo Nascimento">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
-    <title>Ball Forward - Home</title>
+    <title>About Us - Ball Forward</title>
     <link rel="icon" href="images/favicon.ico">
-
     <style>
-        
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #007bff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #4A4E69;
+        }
+
         .logo img {
             height: 60px;
         }
@@ -27,9 +50,6 @@
             list-style: none;
             display: flex;
             gap: 20px;
-
-            z-index: 1000; 
-    position: relative; 
         }
 
         .nav-links a {
@@ -101,7 +121,7 @@
 
         /* Main Content */
         main {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
             background: #fff;
@@ -149,14 +169,13 @@
             margin: 10px 0;
         }
     </style>
-    
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="Logo">
+            <img src="images/logo.png" alt="Ball Forward Logo">
         </div>
         <nav>
             <ul class="nav-links" id="nav-links">
@@ -172,59 +191,55 @@
             </div>
         </nav>
     </header>
-    
-    
+
+    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Ball Forward</h1>
-            <img src="images/hero2.jpg" alt="Sports Image">
-            <a href="gallery.html">
-                <button class="cta">Gallery</button>
-            </a>
-        
+        <!-- History Section -->
+        <section class="about-history section">
+            <h1>Our History</h1>
+            <p>Ball Forward was founded in 2022 with the mission of providing opportunities for youth and adults to practice sports such as soccer, beach volleyball, and footvolley. We began our activities in Seropedica, Rio de Janeiro and have been working to transform lives through sports ever since.</p>
+            <p>With the growth of our community and support from volunteers and partners, we have expanded our programs and positively impacted many lives. Our journey is marked by achievements and challenges, but we always focus on creating an inclusive and welcoming environment for everyone.</p>
         </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="feature">
-                <img src="images/futvolei1.jpg" alt="Footvolley image" class="responsive-img" loading="lazy">>
-                <p>Footvolley</p>
-            </div>
-            <div class="feature">
-                <img src="images/fut1.jpeg" alt="Futball image" class="responsive-img" loading="lazy">>
-                <p>Futball</p>
-            </div>
-            <div class="feature">
-                <img src="images/volei1.jpg" alt="Sand volleyball image" class="responsive-img" loading="lazy">>
-                <p>Sand volleyball</p>
-            </div>
+        <!-- Activities Section -->
+        <section class="about-activities section">
+            <h2>Our Activities and Programs</h2>
+            <ul>
+                <li><strong>Soccer:</strong> Regular training sessions and tournaments for youth and adults.</li>
+                <li><strong>Beach Volleyball:</strong> Classes and competitions at our beachside facilities.</li>
+                <li><strong>Footvolley:</strong> Training and events to promote learning and practice of this sport.</li>
+                <li><strong>Social Programs:</strong> Initiatives to encourage inclusion and mental health through sports.</li>
+            </ul>
+            <p>We are always looking for new ways to engage the community and promote an active and healthy lifestyle. Join us and be part of this transformation!</p>
         </section>
 
-        <!-- Content Section with Callout -->
-        <section class="content-callout">
-            <div class="main-content">
-                <img src="images/futebol.jpeg" alt="Main Content Image" class="responsive-img">
-            </div>
-            <div class="callout-box">
-                <h2>Ball Forward: Transforming Lives Through Sports</h2>
-                <p>"Ball Forward provides opportunities for youth and adults to practice sports such as soccer, beach volleyball,
-                and footvolley, promoting physical and mental well-being. Our mission is to strengthen communities, 
-                build connections, and open doors to professional sports. Join us and be part of this transformation."</p>
-                <a href="contact.html"><button class="contact-us">Contact Us</button></a>
-            </div>
+        <!-- Media Section -->
+        <section class="media-section section">
+            <h2>Gallery and Videos</h2>
+            <p>Explore some highlights of our programs and activities:</p>
+            <img src="images/fut2.jpg" alt="An image of Ball Forward activities">
+            <iframe width="360" height="215" src="https://www.youtube.com/embed/JjAUVVRnnfo?si=Y6gm91uWWJxjc4mj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </main>
-    
+
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>© 2024 ⚽ Ball Forward ⚽ Paulo André Nascimento ⚽ WDD 231</p>
         <div class="social-icons">
-            <a href="#"><img src="images/logo-instagram.webp" alt="Instagram Social Icon"></a>
-            <a href="#"><img src="images/x-logo.png" alt="X Social Icon"></a>
-            <a href="#"><img src="images/youtube.webp" alt="Youtube Social Icon"></a>
+            <a href="#"><img src="images/logo-instagram.webp" alt="Instagram"></a>
+            <a href="#"><img src="images/x-logo.png" alt="X (Twitter)"></a>
+            <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
         </div>
     </footer>
-    
+
+    <script>
+        // JavaScript for the mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

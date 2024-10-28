@@ -6,11 +6,31 @@
     <meta name="description" content="Ball Forward Project helps young people and adults practice sports like soccer, beach volleyball, and footvolley.">
     <meta name="author" content="Paulo Nascimento">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <script src="scripts/script.js" defer></script>
-    <title>Ball Forward - Home</title>
+    <title>Our Gallery</title>
     <link rel="icon" href="images/favicon.ico">
 
     <style>
+
+.gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Cria um grid com 3 colunas */
+            gap: 10px; /* Espaçamento entre as imagens */
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px; /* Define uma altura fixa para todas as imagens */
+            object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+            display: block;
+        }
+        .main-image {
+            grid-column: span 3; /* Faz a imagem principal ocupar 3 colunas */
+            height: 300px; /* Define uma altura maior para a imagem principal */
+        }
+        .main-image {
+            grid-column: span 3; 
+        }
         
         .logo img {
             height: 60px;
@@ -149,14 +169,13 @@
             margin: 10px 0;
         }
     </style>
-    
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="Logo">
+            <img src="images/logo.png" alt="Ball Forward Logo">
         </div>
         <nav>
             <ul class="nav-links" id="nav-links">
@@ -173,58 +192,31 @@
         </nav>
     </header>
     
-    
+    <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Ball Forward</h1>
-            <img src="images/hero2.jpg" alt="Sports Image">
-            <a href="gallery.html">
-                <button class="cta">Gallery</button>
-            </a>
-        
+        <section class="gallery-intro">
+            <p>On this page you will find our activities</p>
         </section>
-
-        <!-- Features Section -->
-        <section class="features">
-            <div class="feature">
-                <img src="images/futvolei1.jpg" alt="Footvolley image" class="responsive-img" loading="lazy">>
-                <p>Footvolley</p>
-            </div>
-            <div class="feature">
-                <img src="images/fut1.jpeg" alt="Futball image" class="responsive-img" loading="lazy">>
-                <p>Futball</p>
-            </div>
-            <div class="feature">
-                <img src="images/volei1.jpg" alt="Sand volleyball image" class="responsive-img" loading="lazy">>
-                <p>Sand volleyball</p>
-            </div>
-        </section>
-
-        <!-- Content Section with Callout -->
-        <section class="content-callout">
-            <div class="main-content">
-                <img src="images/futebol.jpeg" alt="Main Content Image" class="responsive-img">
-            </div>
-            <div class="callout-box">
-                <h2>Ball Forward: Transforming Lives Through Sports</h2>
-                <p>"Ball Forward provides opportunities for youth and adults to practice sports such as soccer, beach volleyball,
-                and footvolley, promoting physical and mental well-being. Our mission is to strengthen communities, 
-                build connections, and open doors to professional sports. Join us and be part of this transformation."</p>
-                <a href="contact.html"><button class="contact-us">Contact Us</button></a>
-            </div>
+        <section class="gallery" id="gallery">
+            
+            <img src="images/image2.jpg" alt="Sand Futvoley image">
+            <img src="images/image3.jpg" alt="Football image">
+            <img src="images/image4.webp" alt="women's football image">
+            <img src="images/image5.png" alt="Football image">
+            <img src="images/image4.jpg" alt="Sand voley image">
+            <img src="images/images7.jpeg" alt="Sand voley image">
         </section>
     </main>
-    
+
     <!-- Footer -->
     <footer>
         <p>© 2024 ⚽ Ball Forward ⚽ Paulo André Nascimento ⚽ WDD 231</p>
         <div class="social-icons">
-            <a href="#"><img src="images/logo-instagram.webp" alt="Instagram Social Icon"></a>
-            <a href="#"><img src="images/x-logo.png" alt="X Social Icon"></a>
-            <a href="#"><img src="images/youtube.webp" alt="Youtube Social Icon"></a>
+            <a href="#"><img src="images/logo-instagram.webp" alt="Instagram"></a>
+            <a href="#"><img src="images/x-logo.png" alt="X (formerly Twitter)"></a>
+            <a href="#"><img src="images/youtube.webp" alt="YouTube"></a>
         </div>
     </footer>
-    
+
 </body>
 </html>
