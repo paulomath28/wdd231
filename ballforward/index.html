@@ -11,7 +11,6 @@
     <link rel="icon" href="images/favicon.ico">
 
     <style>
-        
         .logo img {
             height: 60px;
         }
@@ -27,9 +26,8 @@
             list-style: none;
             display: flex;
             gap: 20px;
-
             z-index: 1000; 
-    position: relative; 
+            position: relative; 
         }
 
         .nav-links a {
@@ -149,7 +147,6 @@
             margin: 10px 0;
         }
     </style>
-    
 </head>
 <body>
 
@@ -165,28 +162,26 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </nav>
     </header>
-    
-    
+
+    <!-- Main Content -->
     <main>
         <!-- Hero Section -->
         <section class="hero">
             <h1>Ball Forward</h1>
             <img src="images/hero2.jpg" alt="Sports Image">
-            <a href="gallery.html">
-                <button class="cta">Gallery</button>
-            </a>
-        
+            <a href="gallery.html" class="cta">Gallery</a>
         </section>
 
         <!-- Features Section -->
         <section class="features">
+            <h2>Features</h2>
             <div class="feature">
                 <img src="images/futvolei1.jpg" alt="Footvolley image" class="responsive-img" loading="lazy">
                 <p>Footvolley</p>
@@ -211,13 +206,13 @@
                 <p>"Ball Forward provides opportunities for youth and adults to practice sports such as soccer, beach volleyball,
                 and footvolley, promoting physical and mental well-being. Our mission is to strengthen communities, 
                 build connections, and open doors to professional sports. Join us and be part of this transformation."</p>
-                <a href="contact.html"><button class="contact-us">Contact Us</button></a>
+                <a href="contact.html" class="contact-us">Contact Us</a>
             </div>
         </section>
     </main>
     
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>© 2024 ⚽ Ball Forward ⚽ Paulo André Nascimento ⚽ WDD 231</p>
         <div class="social-icons">
             <a href="#"><img src="images/logo-instagram.webp" alt="Instagram Social Icon"></a>
@@ -226,5 +221,6 @@
         </div>
     </footer>
     
+    <script src="scripts/script.js"></script>
 </body>
 </html>
